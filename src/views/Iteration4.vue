@@ -1,12 +1,12 @@
 <template>
   <div class="iteration">
     
-    <h1>Iteration 4 | Display a list of elements that are stored inside a component</h1>
+    <h1>4 | Display a list of elements that are stored inside a component</h1>
     <hr>
-    <div v-for="(post, index) in posts" :key="index">
-        <h3>{{ index }} - {{ post.title }} - {{ post.description }}</h3>
-        <p v-for="(post, index) in posts.content" :key="index">
-          {{ index }} - {{ content }}
+    <div v-for="(post, index) in posts" :key="index++">
+        <h2>{{ index }} - {{ post.title }} - {{ post.description }}</h2>
+        <p v-for="(content, index) in post.content" :key="index">
+           {{ content }}
         </p>
     </div>
 
@@ -32,11 +32,18 @@ const posts = ref(
 
 
 <style>
-@media (min-width: 1024px) {
+
   .iteration {
     min-height: 50vh;
     display: block;
     align-items:center;
   }
-}
+
+  h1 {
+    margin-bottom: 3rem;
+  }
+
+  p {
+    padding-left: 2rem;
+  }
 </style>

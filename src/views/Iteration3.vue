@@ -1,5 +1,7 @@
 <template>
   <div class="iteration">
+    <h1>3 | Show an element only if a particular property is set to true</h1>
+    <hr>
     <MyComponent />
   </div>
 </template>
@@ -11,11 +13,12 @@ import { ref } from "vue";
 </script>
 
 <style>
-@media (min-width: 1024px) {
   .iteration {
     min-height: 50vh;
     display: block;
     align-items:center;
   }
-}
+h1 {
+    margin-bottom: 3rem;
+  }
 </style>

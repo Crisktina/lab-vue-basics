@@ -1,12 +1,9 @@
 <template>
  
-   <div>
-    <h1>Iteration 3 | Show an element only if a particular property is set to true</h1>
     <div :class="box1">
         <h2 v-if= "mood === true">Mood: You can do it!</h2>
         <h2 v-else>Mood: Better try again</h2>
     </div>
-   </div>
 
 </template>
 
@@ -29,4 +26,5 @@ const mood = ref(true);
     justify-content: center;
 
 }
+
 </style>

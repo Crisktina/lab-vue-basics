@@ -23,7 +23,7 @@ import { RouterLink, RouterView } from 'vue-router'
   
   <footer>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="50" height="25" />
-    <p>Created by Cris</p>
+    <p>Created by Cris ®</p>
   </footer>
 </template>
 
@@ -45,6 +45,7 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 nav a.router-link-exact-active {
@@ -64,12 +65,16 @@ nav a {
 nav a:first-of-type {
   border: 0;
 }
+footer {
+    margin-top: 3rem;
+  }
 
-@media (min-width: 1024px) {
+
   header {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
+    margin-bottom: 2rem;
   }
 
   .logo {
@@ -85,5 +90,6 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+  
+
 </style>
